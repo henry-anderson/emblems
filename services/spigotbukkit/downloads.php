@@ -1,5 +1,5 @@
 <?php
-header("Content-Type: image/svg+xml");
+//header("Content-Type: image/svg+xml");
 header("Cache-Control: max-age=0");
 
 $spigot_id = $_GET('spigot');
