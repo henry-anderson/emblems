@@ -1,0 +1,4 @@
+RewriteEngine On 
+
+# Rewrite --- /services/spigotandbukkit.php => /spigotbukkit/downloads
+RewriteRule ^/spigotbukkit/downloads?&%{QUERY_STRING}$ services/spigotandbukkit\.php
