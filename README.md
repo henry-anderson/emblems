@@ -1,3 +1,3 @@
 # emblems
 
-This a simple shields.io wrapper that provides additional services.
+This is a simple shields.io wrapper that provides additional services.
