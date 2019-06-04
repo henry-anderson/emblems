@@ -2,10 +2,10 @@
 //header("Content-Type: image/svg+xml");
 header("Cache-Control: max-age=0");
 
-$spigot_id = $_GET('spigot');
-$bukkit_id = $_GET('bukkit');
-$color = $_GET('color');
-$name = ($_GET('name') != null) ? $_GET('name') : "downloads";
+$spigot_id = $_GET['spigot'];
+$bukkit_id = $_GET['bukkit'];
+$color = $_GET['color'];
+$name = ($_GET['name'] != null) ? $_GET('name') : "downloads";
 
 echo "Spigot: " . $spigot_id;
 echo "Bukkit: " . $bukkit_id;
