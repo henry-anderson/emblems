@@ -1,5 +1,4 @@
 RewriteEngine On
-RewriteRule ^services/(.*) /$1 [NC,L]
-RewriteRule services/spigotbukkit/downloads services/spigotbukkit/downloads.php [L]
-RewriteRule services/spigot/downloads services/spigot/downloads.php [L]
-RewriteRule services/bukkit/downloads services/bukkit/downloads.php [L]
+RewriteRule spigotbukkit/downloads services/spigotbukkit/downloads.php [L]
+RewriteRule spigot/downloads services/spigot/downloads.php [L]
+RewriteRule bukkit/downloads services/bukkit/downloads.php [L]
