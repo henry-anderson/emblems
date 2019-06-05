@@ -1,14 +1,9 @@
 <?php
 header("Content-Type: image/svg+xml");
-header("Cache-Control: max-age=0");
+header("Cache-Control: max-age=120");
 
 $color = ($_GET['color'] != null ? $_GET['color'] : "blue");
 $name = ($_GET['name'] != null) ? $_GET['name'] : "downloads";
-
-//echo "Spigot: " . $spigot_id;
-//echo "Bukkit: " . $bukkit_id;
-//echo "Color: " . $color;
-//echo "Name: " . $name;
 
 function get_spigot_downloads($spigot_id) {
     if($spigot_id != null) {
@@ -39,4 +34,3 @@ function get_total_downloads() {
 
 $image = file_get_contents("https://img.shields.io/badge/" . $name . "-" . number_format(strval(get_total_downloads())) . "-" . $color . ".svg");
 echo $image;
-?>
