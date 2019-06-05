@@ -1,35 +1,42 @@
 <?php
-//header("Content-Type: image/svg+xml");
+header("Content-Type: image/svg+xml");
 header("Cache-Control: max-age=0");
 
-$spigot_id = $_GET['spigot'];
-$bukkit_id = $_GET['bukkit'];
-$color = $_GET['color'];
-$name = ($_GET['name'] != null) ? $_GET('name') : "downloads";
+$color = ($_GET['color'] != null ? $_GET['color'] : "blue");
+$name = ($_GET['name'] != null) ? $_GET['name'] : "downloads";
 
-echo "Spigot: " . $spigot_id;
-echo "Bukkit: " . $bukkit_id;
-echo "Color: " . $color;
-echo "Name: " . $name;
+//echo "Spigot: " . $spigot_id;
+//echo "Bukkit: " . $bukkit_id;
+//echo "Color: " . $color;
+//echo "Name: " . $name;
 
-function get_spigot_downloads() {
-    $page = file_get_contents("https://api.spiget.org/v2/resources/3829");
-    $firstpart = explode("\"downloads\": ", $page)[1];
-    $downloads = explode(",", $firstpart)[0];
-    return intval($downloads);
+function get_spigot_downloads($spigot_id) {
+    if($spigot_id != null) {
+        $page = file_get_contents("https://api.spiget.org/v2/resources/" . $spigot_id);
+        $firstpart = explode("\"downloads\": ", $page)[1];
+        $downloads = explode(",", $firstpart)[0];
+        return intval($downloads);
+    } else {
+        return 0;
+    }
 }
 
-function get_bukkit_downloads() {
-    $page = file_get_contents("https://dev.bukkit.org/projects/89296");
-    $firstpart = explode("<div class=\"info-data\">", $page)[4];
-    $downloads = explode("</div>", $firstpart)[0];
-    return intval(str_replace(",", "", $downloads));
+function get_bukkit_downloads($bukkit_id) {
+    if($bukkit_id != null) {
+        $page = file_get_contents("https://dev.bukkit.org/projects/" . $bukkit_id);
+        $firstpart = explode("<div class=\"info-data\">", $page)[4];
+        $downloads = explode("</div>", $firstpart)[0];
+        return intval(str_replace(",", "", $downloads));
+    }
+    else {
+        return 0;
+    }
 }
 
 function get_total_downloads() {
-    return (get_bukkit_downloads() + get_spigot_downloads());
+    return (get_bukkit_downloads($_GET['bukkit']) + get_spigot_downloads($_GET['spigot']));
 }
 
-$image = file_get_contents("https://img.shields.io/badge/downloads-" . number_format(strval(get_total_downloads())) . "-blue.svg");
+$image = file_get_contents("https://img.shields.io/badge/" . $name . "-" . number_format(strval(get_total_downloads())) . "-" . $color . ".svg");
 echo $image;
 ?>
