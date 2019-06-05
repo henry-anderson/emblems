@@ -16,7 +16,9 @@ This badge displays the total amount of downloads on both Spigot and BukkitDev. 
 https://emblems.herokuapp.com/spigotbukkit/downloads?spigot=3829&bukkit=89296&color=red
 </pre>
 
-This will create a dynamic badge that looks like this <img src="https://emblems.herokuapp.com/spigotbukkit/downloads.php?spigot=3829&bukkit=89296&color=red">
+This will create a dynamic badge that looks like this
+
+<img src="https://emblems.herokuapp.com/spigotbukkit/downloads.php?spigot=3829&bukkit=89296&color=red">
 
 ### Bukkit Downloads
 This badge displays the amount of downloads a specific plugin has on BukkitDev. It only has one extra parameter, 'id' which represents the plugin's BukkitDev ID. Here is an example for [PingAPI](https://dev.bukkit.org/projects/pingapi).
@@ -25,7 +27,9 @@ This badge displays the amount of downloads a specific plugin has on BukkitDev. 
 https://emblems.herokuapp.com/services/bukkit/downloads?id=89296&color=green
 </pre>
 
-This will create a dynamic badge that looks like this <img src="https://emblems.herokuapp.com/services/bukkit/downloads?id=89296&color=green">
+This will create a dynamic badge that looks like this
+
+<img src="https://emblems.herokuapp.com/services/bukkit/downloads?id=89296&color=green">
 
 ### Spigot Downloads
 This service is already included in shields.io, but I thought I would add it anyway for completeness. It displays the amount of downloads a specific plugin has on Spigot. It only has one extra parameter, 'id' which represents the plugin's Spigot ID. Here is an example for [PingAPI](https://www.spigotmc.org/resources/pingapi.3829/).
@@ -34,4 +38,6 @@ This service is already included in shields.io, but I thought I would add it any
 https://emblems.herokuapp.com/spigot/downloads?id=3829
 </pre>
 
-This will create a dynamic badge that looks like this <img src="https://emblems.herokuapp.com/spigot/downloads?id=3829">
+This will create a dynamic badge that looks like this
+
+<img src="https://emblems.herokuapp.com/spigot/downloads?id=3829">
