@@ -1,7 +1,8 @@
 <?php
-$cache = ($_GET['cache'] != null) ? $_GET['cache'] : "120";
-$color = ($_GET['color'] != null) ? $_GET['color'] : "blue";
-$name = ($_GET['name'] != null) ? $_GET['name'] : "downloads";
+require "../../utils/BadgeUtils.php";
+$cache = isset($_GET['cache']) ? $_GET['cache'] : "120";
+$color = isset($_GET['color']) ? $_GET['color'] : "blue";
+$name = isset($_GET['name']) ? $_GET['name'] : "downloads";
 header("Content-Type: image/svg+xml");
 header("Cache-Control: max-age=" . $cache);
 
