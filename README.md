@@ -1,6 +1,6 @@
 # emblems
 
-This is a simple shields.io wrapper that provides additional services. I created it to add a few new features to shields.io and figured I would share it. It is hosted on Heroku.
+This is a simple shields.io wrapper that provides additional services. I created it to add a few new features to shields.io that I wanted and figured I would share. It is hosted on Heroku.
 
 ## Parameters
 - cache: Modifies the 'Cache-Control' header with the amount of time in seconds the image should be cached for. The default is 120 seconds
