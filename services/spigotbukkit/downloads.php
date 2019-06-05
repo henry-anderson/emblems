@@ -33,4 +33,4 @@ function get_total_downloads() {
     return (get_bukkit_downloads($_GET['bukkit']) + get_spigot_downloads($_GET['spigot']));
 }
 
-echo BadgeUtils::getBadge($name, number_format(strval(get_total_downloads())), $color);
+BadgeUtils::printBadge($name, number_format(strval(get_total_downloads())), $color);

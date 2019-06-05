@@ -17,4 +17,4 @@ function get_spigot_downloads($spigot_id) {
     }
 }
 
-echo BadgeUtils::getBadge($name, number_format(strval(get_spigot_downloads($_GET['id']))), $color);
+BadgeUtils::printBadge($name, number_format(strval(get_spigot_downloads($_GET['id']))), $color);
