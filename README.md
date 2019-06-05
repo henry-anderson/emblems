@@ -13,7 +13,7 @@ Each service has unique parameters but these two are global
 This badge displays the total amount of downloads on both Spigot and BukkitDev. It has two extra parameters, 'bukkit' which represents the plugin's BukkitDev ID and 'spigot' which represents the plugin's Spigot ID. Here is an example for [PingAPI](https://www.spigotmc.org/resources/pingapi.3829/).
 
 <pre>
-https://emblems.herokuapp.com/spigotbukkit/downloads.php?spigot=3829&bukkit=89296&color=red
+https://emblems.herokuapp.com/spigotbukkit/downloads?spigot=3829&bukkit=89296&color=red
 </pre>
 
 This will create a dynamic badge that looks like this <img src="https://emblems.herokuapp.com/spigotbukkit/downloads.php?spigot=3829&bukkit=89296&color=red">
