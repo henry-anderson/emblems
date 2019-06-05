@@ -5,6 +5,7 @@ This is a simple shields.io wrapper that provides additional services. I created
 ## Parameters
 - cache: Modifies the 'Cache-Control' header with the amount of time in seconds the image should be cached for. The default is 120 seconds
 - color: The color of the badge. The default is blue.
+- name: The text that appears on the left half of the badge. The default for this parameter varies 
 
 Each service has unique parameters but these two are global
 
