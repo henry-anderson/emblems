@@ -1,6 +1,6 @@
 <?php
 header("Content-Type: image/svg+xml");
-header("Cache-Control: max-age=120");
+header("Cache-Control: max-age=" . ($_GET['cache'] != null) ? $_GET['cache'] : 120);
 
 $color = ($_GET['color'] != null ? $_GET['color'] : "blue");
 $name = ($_GET['name'] != null) ? $_GET['name'] : "downloads";
