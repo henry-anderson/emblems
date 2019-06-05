@@ -1,9 +1,10 @@
 <?php
-header("Content-Type: image/svg+xml");
-header("Cache-Control: max-age=" . ($_GET['cache'] != null) ? $_GET['cache'] : 120);
-
-$color = ($_GET['color'] != null ? $_GET['color'] : "blue");
+$cache = ($_GET['cache'] != null) ? $_GET['cache'] : "120";
+$color = ($_GET['color'] != null) ? $_GET['color'] : "blue";
 $name = ($_GET['name'] != null) ? $_GET['name'] : "downloads";
+
+header("Content-Type: image/svg+xml");
+header("Cache-Control: max-age=" . $cache);
 
 function get_spigot_downloads($spigot_id) {
     if($spigot_id != null) {
