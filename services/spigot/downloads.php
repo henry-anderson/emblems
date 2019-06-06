@@ -6,7 +6,7 @@ $name = isset($_GET['name']) ? $_GET['name'] : "downloads";
 header("Content-Type: image/svg+xml");
 header("Cache-Control: max-age=" . $cache);
 
-function get_spigot_downloads($spigot_id) {
+function get_downloads($spigot_id) {
     if($spigot_id != null) {
         $page = file_get_contents("https://api.spiget.org/v2/resources/" . $spigot_id);
         $firstpart = explode("\"downloads\": ", $page)[1];
@@ -17,4 +17,4 @@ function get_spigot_downloads($spigot_id) {
     }
 }
 
-BadgeUtils::printBadge($name, number_format(strval(get_spigot_downloads($_GET['id']))), $color);
+BadgeUtils::printBadge($name, number_format(strval(get_downloads($_GET['id']))), $color);
