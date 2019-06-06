@@ -17,8 +17,6 @@ This badge displays the total amount of downloads on both Spigot and BukkitDev. 
 http://badge.henrya.org/spigotbukkit/downloads?spigot=3829&bukkit=89296&color=red
 </pre>
 
-The badge will look like this:
-
 <img src="http://badge.henrya.org/spigotbukkit/downloads?spigot=3829&bukkit=89296&color=red">
 
 ### Bukkit Downloads
@@ -27,8 +25,6 @@ This badge displays the amount of downloads a specific plugin has on BukkitDev. 
 <pre>
 http://badge.henrya.org/bukkit/downloads?id=89296&color=green
 </pre>
-
-The badge will look like this:
 
 <img src="http://badge.henrya.org/bukkit/downloads?id=89296&color=green">
 
@@ -41,8 +37,6 @@ This displays the amount of downloads a specific plugin has on Spigot. Here is a
 http://badge.henrya.org/spigot/downloads?id=3829
 </pre>
 
-The badge will look like this:
-
 <img src="http://badge.henrya.org/spigot/downloads?id=3829">
 
 #### Version
@@ -51,7 +45,5 @@ This displays the current version of a plugin. It **does not** work with premium
 <pre>
 http://badge.henrya.org/spigot/version?id=3829
 </pre>
-
-The badge will look like this:
 
 <img src="http://badge.henrya.org/spigot/version?id=3829">
