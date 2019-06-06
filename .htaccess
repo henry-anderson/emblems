@@ -1,4 +1,5 @@
 RewriteEngine On
 RewriteRule spigotbukkit/downloads services/spigotbukkit/downloads.php [L]
 RewriteRule spigot/downloads services/spigot/downloads.php [L]
+RewriteRule spigot/version services/spigot/version.php [L]
 RewriteRule bukkit/downloads services/bukkit/downloads.php [L]
