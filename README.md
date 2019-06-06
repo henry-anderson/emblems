@@ -7,7 +7,7 @@ This is a simple shields.io wrapper that provides additional services. I created
 - color: The color of the badge. The default is blue.
 - name: The text that appears on the left half of the badge. The default for this parameter varies 
 
-Each service has unique parameters but these two are global
+Each service has unique parameters but these three are global
 
 ## Services
 ### Bukkit and Spigot Downloads
